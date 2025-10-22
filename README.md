@@ -95,3 +95,22 @@ DB_PASSWORD=senha
 DB_NAME=nome_do_banco
 JWT_SECRET=seu_segredo
 PORT=3001
+
+
+## Banco de Dados
+
+Este projeto usa MySQL puro.
+
+1. Crie o banco no MySQL com o nome `ClubeUva`:
+   ```sql
+   CREATE DATABASE ClubeUva;
+
+   Importe o arquivo schema.sql para criar as tabelas e dados iniciais:
+   mysql -u usuario_api -p ClubeUva < schema.sql
+
+   Configure o arquivo .env com as credenciais do banco:
+
+   DB_HOST=localhost
+DB_USER=usuario_api
+DB_PASSWORD=SenhaFort3@123
+DB_NAME=ClubeUv
